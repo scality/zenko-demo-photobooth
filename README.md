@@ -4,6 +4,17 @@
 This is a repository for demo of Zenko multi-cloud replication and metadata search capabilities. 
 It is a photobooth that creates animated gifs and writing them as objects to Zenko using s3 API. After the gifs are uplouded to Zenko local storage Orbit allowes to replicate, set lifecicle rules, watch the status of the data on different public clouds.
 
+
+
+## Parts
+Originally this booth was built and set up using this design [here](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/). It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with raspberry pi.
+
+For the demo here I used Paspberry Pi 3, Raspberry Pi camera module and 7 inch HDMI touch display. Special credit to @smaffulli as he had the original version of this photobooth running in our office room before to fun moments for the team.
+
+## Dependacies 
+The operating system of a choice is the latest image of Raspian Stretch Lite (find them here https://www.raspberrypi.org/downloads/raspbian/). 
+
+
 ## Demo flow
 
 1. Booth displays the instruction picture to press the "Start" button
@@ -14,11 +25,3 @@ It is a photobooth that creates animated gifs and writing them as objects to Zen
 After successful replication object will be deleted from local Zenko file system to preserve space.
 
 Our freshly created data ready to be managed!
-
-## Parts
-Originally this booth was built and set up using this design [here](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/). It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with raspberry pi.
-
-For the demo here I used Paspberry Pi 3, Raspberry Pi camera module and 7 inch HDMI touch display. Special credit to @smaffulli as he had the original version of this photobooth running in our office room before to fun moments for the team.
-
-## Dependacies 
-The operating system of a choice is the latest image of Raspian Stretch Lite (find them here https://www.raspberrypi.org/downloads/raspbian/). 
