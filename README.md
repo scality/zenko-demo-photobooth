@@ -29,9 +29,13 @@ These can be installed using `sudo apt-get install` or `sudo pip install`
 ## Demo flow
 
 1. LED light is next to the button and indicates “Ready” status after the pi is booted or previous session is finished. The script runs an endless loop and launches at boot. This was done by placing [this](https://github.com/scality/zenko-demo-photobooth/blob/master/photobooth.service) script into `/lib/systemd/system/` folder.
+
 2. After the “Start” button was pressed script is executed. User is guided to get ready and Pi Camera Module will take 4 pictures in a row. Resolution can be configured HERE.
+
 3. All pictures are saved in `/home/pi` directory. The script calls to gm tool and creates an animated gif. Resolution of resulting gif can be also configured.
+
 4. Next step is to provide an input window on the screen for the user to enter their name and email. This two values will be used as metadata for the gif when uploading to Zenko.
+
 5. Upload the gif. That is done using boto3. Boto is the Amazon Web Services (AWS) SDK for Python. We create a low-level client with the service name ‘s3’ and the keys to Zenko instance along with the endpoint. All this info is available on Orbit connected to Zenko instance.
 ```
 session = boto3.session.Session()
@@ -45,7 +49,7 @@ s3_client = session.client(
 When putting the object to Zenko using client there are few small details to keep in mind.
 ```
 s3_client.put_object(Bucket='transfer-bucket',
-				Key= user_name,
+    Key= user_name,
     Body=data,
     Metadata={ 'name':user_name, 'email': user_email, 'event': 'dockercon19' })
 ```
@@ -55,10 +59,12 @@ Metadata - key: value pairs to be added to the object
 "transfer-bucket" - is the name of my bucket in Zenko. We call it transient source as objects that upoloaded there are deleted right after all jdesired replications are successfull. This is very handy not to overflow the local Zenko bucket.
 
 6. I everything went well putting the gif to Zenko then preview mode will start and show the resulting gif to the user couple times. Instant gratification is important ;)
+
 7. Our freshly created data ready to be managed! At this point, it is a good idea to check the gif in the Orbit browser, make sure that it was replicated to different cloud storage locations, see the metrics…
 
 ## Credits
 Special credit to [@smaffulli](https://github.com/smaffulli/drumminhands_photobooth) as he had the original version of this photobooth running in our office room before for fun and generated lots of joy.
+
 [Design](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/)
 
 
