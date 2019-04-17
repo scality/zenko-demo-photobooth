@@ -12,6 +12,7 @@ It is a photobooth that creates animated gifs and writing them as objects to Zen
 4. Object will be created from the gif with name and email of a user as metadata. This will be uploaded to Zenko local bucket using s3 API.
 5. Once the object is uploaded Orbit will start replication to 3 cloud storage locations (GCP, AWS, Azure) automatically.
 After successful replication object will be deleted from local Zenko file system to preserve space.
+Our freshly created data ready to be managed!
 
 ## Parts
 Originally this booth was built and set up using this design [here](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/). It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with raspberry pi.
