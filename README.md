@@ -14,7 +14,8 @@ It is a photobooth that creates animated gifs and writing them as objects to Zen
 After successful replication object will be deleted from local Zenko file system to preserve space.
 
 ## Parts
-Originally this booth was built and set up using this design. It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with raspberry pi.
+Originally this booth was built and set up using this design [here] (https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/). It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with raspberry pi.
+
 For the demo here I used Paspberry Pi 3, Raspberry Pi camera module and 7 inch HDMI touch display. Special credit to @smaffulli as he had the original version of this photobooth running in our office room before to fun moments for the team.
 
 ## Dependacies 
