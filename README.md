@@ -14,7 +14,8 @@ For the demo here I used Paspberry Pi 3, Raspberry Pi camera module and 7 inch H
 
 ## Dependacies 
 
-The operating system of a choice is the latest image of Raspian Stretch Lite (from [here]https://www.raspberrypi.org/downloads/raspbian/).
+The operating system of a choice is the latest image of Raspian Stretch Lite (from [here](https://www.raspberrypi.org/downloads/raspbian/)).
+
 Other things:
  ``` 
    *boto3
