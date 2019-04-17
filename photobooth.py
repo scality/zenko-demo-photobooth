@@ -368,9 +368,9 @@ def start_photobooth():
 
                 s3_client = session.client(
                     service_name='s3',
-                    aws_access_key_id='3WS0VKFA6WD08Y8QZBUN',
-                    aws_secret_access_key='oZ/XljCBdRTDhhyZc=9WzO8cd7ecEbaQ0JFmniiq',
-                    endpoint_url='https://53dc7c09-57d5-11e9-bde1-c606aa6eabf1.sandbox.zenko.io',)
+                    aws_access_key_id='ECCESS KEY',
+                    aws_secret_access_key='SECRET KEY',
+                    endpoint_url='ZENKO ENDPOINT',)
 		if config.make_gifs:
                     try:
 			file_to_upload = config.file_path + now + ".gif"
