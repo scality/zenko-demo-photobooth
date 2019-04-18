@@ -66,7 +66,7 @@ We call it transient source as objects that upoloaded there are deleted right af
 Thanks to Zenko I have all the gifs of visitors of my photobooth stored and backed up in 3 different cloud storage locations and each object has very handy metadata linked to it. Exactly. Name and email. That allowes me to send all the gifs to their owners without any confusion.
 
 ## Credits
-Special credit to [@smaffulli](https://github.com/smaffulli/drumminhands_photobooth) as he had the original version of this photobooth running in our office room before for fun and generated lots of joy.
+Special credit to [@smaffulli](https://github.com/smaffulli/drumminhands_photobooth) as he had the original version of this photobooth running in our office room for fun and generated lots of joy.
 
 [Design](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/) of the photobooth.
 
