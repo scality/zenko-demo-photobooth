@@ -63,6 +63,8 @@ We call it transient source as objects that upoloaded there are deleted right af
 
 7. Our freshly created data ready to be managed! At this point, it is a good idea to check the gif in the Orbit browser, make sure that it was replicated to different cloud storage locations, see the metrics, etc.
 
+Thanks to Zenko I have all the gifs of visitors of my photobooth stored and backed up in 3 different cloud storage locations and each object has very handy metadata linked to it. Exactly. Name and email. That allowes me to send all the gifs to their owners without any confusion.
+
 ## Credits
 Special credit to [@smaffulli](https://github.com/smaffulli/drumminhands_photobooth) as he had the original version of this photobooth running in our office room before for fun and generated lots of joy.
 
