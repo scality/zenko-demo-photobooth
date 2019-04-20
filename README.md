@@ -9,7 +9,7 @@ It is a photobooth that creates animated gifs and writing them as objects to Zen
 ## Parts
 
 Originally this booth was built and set up using this design [here](https://www.drumminhands.com/2018/06/15/raspberry-pi-photo-booth/). It is very well documented and has a GitHub repo with the base script of photobooth making pictures. You can find all the hardware parts needed and usefull links on how to get started with the pi.
-For the demo here I used Raspberry Pi 3, Raspberry Pi camera module and 7 inch HDMI touch display and wired access to the internet because it is infinitely better then wifi that tends to behave very flaky.
+For the demo here I used Raspberry Pi 3, Raspberry Pi camera module and 7 inch HDMI touch display and wired access to the internet because it is infinitely better than wifi that tends to behave very flaky.
 
 
 ## Dependacies 
